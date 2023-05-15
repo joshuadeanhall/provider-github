@@ -2,7 +2,7 @@
 # Setup Project
 
 PROJECT_NAME ?= provider-github
-PROJECT_REPO ?= github.com/upbound/$(PROJECT_NAME)
+PROJECT_REPO ?= github.com/joshuadeanhall/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION ?= 1.3.3
 
