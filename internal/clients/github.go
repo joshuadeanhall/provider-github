@@ -62,6 +62,7 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 			return ps, errors.Wrap(err, errUnmarshalCredentials)
 		}
 
+		// TODO I think I would need to do something here
 		// Set credentials in Terraform provider configuration.
 		/*ps.Configuration = map[string]any{
 			"username": creds["username"],

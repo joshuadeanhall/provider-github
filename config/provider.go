@@ -10,7 +10,8 @@ import (
 
 	ujconfig "github.com/upbound/upjet/pkg/config"
 
-	"github.com/josh, josh-org/provider-github/config/null"
+	"github.com/josh, josh-org/provider-github/config/branch"
+	"github.com/josh, josh-org/provider-github/config/repository"
 )
 
 const (
@@ -35,7 +36,9 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		null.Configure,
+		repository.Configure,
+	        branch.Configure,
+
 	} {
 		configure(pc)
 	}
